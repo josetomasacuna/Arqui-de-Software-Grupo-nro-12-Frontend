@@ -1,30 +1,13 @@
-import { useState } from 'react'
+import React from 'react';
+import Router from './Router';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <p className='text-3xl font-bold underline'>
-          Hello world
-        </p>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className='main bg-white h-full w-full flex flex-col items-center'>
+      <Router />
+    </div>
+  );
 }
 
 export default App
