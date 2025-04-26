@@ -10,7 +10,7 @@ function Profile() {
   const [user, setUser] = useState<User>({
     name: "Juan Pérez",
     email: "juan.perez@example.com",
-    wallet_balance: 1000,
+    wallet_balance: 1000000,
   });
 
   const handleAddMoney = () => {
@@ -34,7 +34,7 @@ function Profile() {
 
       <button
         onClick={handleAddMoney}
-        className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+        className="mt-6 px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700 transition"
       >
         Agregar Dinero
       </button>
