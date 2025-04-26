@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className='main bg-white h-full w-full flex flex-col items-center'>
+    <div className='main bg-white w-full flex flex-col items-center'>
       <Router />
     </div>
   );
